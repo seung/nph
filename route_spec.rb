@@ -1,5 +1,5 @@
-require "./route"
 require "./railroad"
+require "./route"
 
 describe Route do
   before do
@@ -9,12 +9,16 @@ describe Route do
   it "calculates the travel distance in a given itinerary" do
     route = Route.new @railroad, "A-B-C"
     route.calc_dist().should == 9
+
     route = Route.new @railroad, "A-D"
     route.calc_dist().should == 5
+
     route = Route.new @railroad, "A-D-C"
     route.calc_dist().should == 13
+
     route = Route.new @railroad, "A-E-B-C-D"
     route.calc_dist().should == 22
+
     route = Route.new @railroad, "A-E-D"
     route.calc_dist().should == "NO SUCH ROUTE"
   end
@@ -32,6 +36,7 @@ describe Route do
   it "finds the shortest route from specified origin to destination" do
     route = Route.new @railroad, "A-C"
     route.shortest_route().should == 9
+    
     route = Route.new @railroad, "B-B"
     route.shortest_route().should == 9
   end

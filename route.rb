@@ -1,3 +1,4 @@
+# Route represents a sequence of origin-destination subroutes
 class Route
   def initialize(railroad, itinerary)
     @origin = itinerary[0]
@@ -100,12 +101,14 @@ class Route
     @result
     stops = 10
 
+    # create a list of all available routes
     for l in 1..stops - 1
       @railroad.stations[@origin].each do |k, v|
         @res.push(helper(k, @destination, l, @origin+k))
       end
     end
 
+    # select the route with the minimum distance of travel
     min = 1000;
     @res.each do |i|
       calculated_dist = calc_dist(i)

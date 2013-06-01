@@ -1,3 +1,4 @@
+# Railroad represents a map of available origin-destination in a city
 class Railroad
   attr_accessor :stations
   def initialize(input_file)
