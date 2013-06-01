@@ -30,4 +30,4 @@ route = Route.new @railroad, "B-B"
 puts "Output #9: #{route.shortest_route()}"
 
 route = Route.new @railroad, "C-C"
-puts "Output #10: #{route.routes_shorter(30)}"
+puts "Output #10: #{route.routes_shorter_than(30)}"

@@ -43,6 +43,6 @@ describe Route do
 
   it "finds all possible routes with travel distance less than the specified number" do
     route = Route.new @railroad, "C-C"
-    route.routes_shorter(30).should == 7
+    route.routes_shorter_than(30).should == 7
   end
 end

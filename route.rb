@@ -121,8 +121,8 @@ class Route
   end
 
   # dist: maximum distance
-  # all possible routes with travel distance less than given max distance
-  def routes_shorter dist
+  # all available routes with travel distance less than given max distance
+  def routes_shorter_than dist
     raise "Invalid input" if dist.class != Fixnum
     res2 = []
     @result = []
