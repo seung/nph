@@ -4,18 +4,7 @@
 ruby railroad_runner.rb test_data.txt
 
 1.1.1. Verification of the solution
-Result of running railroad_runnber.rb with the provided test input (stored in test_data.txt) matches the expected output provided by ThoughtWorks.
-
-Output #1: 9
-Output #2: 5
-Output #3: 13
-Output #4: 22
-Output #5: NO SUCH ROUTE
-Output #6: 2
-Output #7: 3
-Output #8: 9
-Output #9: 9
-Output #10: 7
+Result of running railroad_runnber.rb with the provided test input (stored in test_data.txt) matches the expected output.
 
 1.2. Instructions to run the tests
 
@@ -32,13 +21,13 @@ A Railroad class represents a system map of a railroad system. A Route class rep
 
 2.1 Description of Railroad class
 
-- A Railroad class represents a map of available origin-destination in a city or a system entity (i.e. "Kiwiland railroad system"). @stations instance variable represents a mapping of all the stations and available routes (origin-destination). 
+- A Railroad class represents a map of available origin-destination in a city or a system entity. @stations instance variable represents a mapping of all the stations and available routes (origin-destination). 
 - The keys in @stations instance variable represent stations in the railroad system.
 - The values in @stations instance variable represent available route from the specified origin and distance of the travel as a key-value pair.
 
 2.2 Description of Route class
 
-A Route class represents the itinerary of a trip (i.e. "A-E-B-C-D") and has methods to analyze the itinerary/trip.
+A Route class represents the itinerary of a trip and has methods to analyze the itinerary/trip.
 
 2.2.1. Description of the instance variables of the Route class
 
