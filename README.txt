@@ -17,7 +17,7 @@ rspec route_spec.rb
 
 2. Overview of the design
 
-A Railroad class represents a system map of a railroad system. A Route class represents an itinerary of a trip and has methods to analyze the route. By separating the Railroad class and the Route class, Route class and its method can be applied to multiple instances of Railroad classes (i.e. railroad system for another city other than Kiwiland).
+A Railroad class represents a system map of a railroad system. A Route class represents an itinerary of a trip and has methods to analyze the route. By separating the Railroad class and the Route class, Route class and its method can be applied to multiple instances of Railroad classes.
 
 2.1 Description of Railroad class
 
